@@ -1,34 +1,18 @@
 import loadJson from '../components/load-json/'
+import getURLParams from "./modules/getURLParams"
+import settings from "./settings.json"
+import places from "./places.json"
 import { App } from './modules/applet'
 
+const state = getURLParams("state") ? getURLParams("state") : "NSW"
 
-function getURLParams(paramName) {
+var stateData = settings.find( item => item.state === state)
 
-	const params = window.parent.location.search.substring(1).split("&")
+if ( state != null ) {
 
-    for (let i = 0; i < params.length; i++) {
-    	let val = params[i].split("=");
-	    if (val[0] == paramName) {
-	        return val[1];
-	    }
-	}
-	return null;
-
-}
-
-const key = getURLParams('key') //"10k7rSn5Y4x0V8RNyQ7oGDfhLvDqhUQ2frtZkDMoB1Xk"
-
-if ( key != null ) {
-
-	loadJson(`https://interactive.guim.co.uk/docsdata/${key}.json`)
+	loadJson(`https://interactive.guim.co.uk/docsdata/1q5gdePANXci8enuiS4oHUJxcxC13d6bjMRSicakychE.json`)
 	      .then((data) => {
-	      	let googledoc = data.sheets.data;
-	      	new App(googledoc)
+	      	new App(data.sheets, state, stateData, places)
 	      })
 
 }
-
-
-
-
-
