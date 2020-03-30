@@ -1,0 +1,354 @@
+[
+  {
+    "name": "Katherine",
+    "latitude": -14.466625,
+    "longitude": 132.266593,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Busselton",
+    "latitude": -33.656409,
+    "longitude": 115.348659,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Mandurah",
+    "latitude": -32.523483,
+    "longitude": 115.747057,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Broome",
+    "latitude": -17.961771,
+    "longitude": 122.230768,
+    "state": "WA",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Kalgoorlie",
+    "latitude": -30.735399,
+    "longitude": 121.460017,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Albany",
+    "latitude": -35.016947,
+    "longitude": 117.891605,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Port Hedland",
+    "latitude": -20.310402,
+    "longitude": 118.606031,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Karratha",
+    "latitude": -20.730377,
+    "longitude": 116.870013,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Geraldton",
+    "latitude": -28.76663,
+    "longitude": 114.599971,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Griffith",
+    "latitude": -34.290014,
+    "longitude": 146.040016,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Orange",
+    "latitude": -33.279998,
+    "longitude": 149.099984,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Dubbo",
+    "latitude": -32.259957,
+    "longitude": 148.597327,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Armidale",
+    "latitude": -30.512312,
+    "longitude": 151.667476,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Broken Hill",
+    "latitude": -31.94995,
+    "longitude": 141.433114,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Port Lincoln",
+    "latitude": -34.733243,
+    "longitude": 135.86658,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Whyalla",
+    "latitude": -33.025027,
+    "longitude": 137.561412,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Portland",
+    "latitude": -38.34,
+    "longitude": 141.590003,
+    "state": "Victoria",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Windorah",
+    "latitude": -25.433242,
+    "longitude": 142.650197,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Mount Isa",
+    "latitude": -20.723866,
+    "longitude": 139.490028,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Rockhampton",
+    "latitude": -23.363911,
+    "longitude": 150.520001,
+    "state": "QLD",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Cairns",
+    "latitude": -16.88784,
+    "longitude": 145.763331,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Devonport",
+    "latitude": -41.192668,
+    "longitude": 146.331102,
+    "state": "",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Darwin",
+    "latitude": -12.425354,
+    "longitude": 130.850039,
+    "state": "NT",
+    "city": "",
+    "scalerank": 0
+  },
+  {
+    "name": "Alice Springs",
+    "latitude": -23.700996,
+    "longitude": 133.880035,
+    "state": "NT",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Canberra",
+    "latitude": -35.283029,
+    "longitude": 149.129026,
+    "state": "ACT",
+    "city": "",
+    "scalerank": 0
+  },
+  {
+    "name": "Newcastle",
+    "latitude": -32.845348,
+    "longitude": 151.815012,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Townsville",
+    "latitude": -19.24995,
+    "longitude": 146.769997,
+    "state": "QLD",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Brisbane",
+    "latitude": -27.455031,
+    "longitude": 153.035093,
+    "state": "QLD",
+    "city": "",
+    "scalerank": 0
+  },
+  {
+    "name": "Hobart",
+    "latitude": -42.850009,
+    "longitude": 147.29503,
+    "state": "TAS",
+    "city": "",
+    "scalerank": 0
+  },
+  {
+    "name": "Perth",
+    "latitude": -31.955015,
+    "longitude": 115.839999,
+    "state": "WA",
+    "city": "",
+    "scalerank": 0
+  },
+  {
+    "name": "Sydney",
+    "latitude": -33.920011,
+    "longitude": 151.18518,
+    "state": "NSW",
+    "city": "Sydney",
+    "scalerank": 0
+  },
+  {
+    "name": "Melbourne",
+    "latitude": -37.820031,
+    "longitude": 144.975016,
+    "state": "Victoria",
+    "city": "Melbourne",
+    "scalerank": 0
+  },
+  {
+    "name": "Portland",
+    "latitude": -38.34,
+    "longitude": 141.590003,
+    "state": "Victoria",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Bendigo",
+    "latitude": -36.759993,
+    "longitude": 144.28002,
+    "state": "Victoria",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Wangaratta",
+    "latitude": -36.360017,
+    "longitude": 146.3,
+    "state": "Victoria",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Central Coast",
+    "latitude": -33.42979,
+    "longitude": 151.371445,
+    "state": "",
+    "city": "Sydney",
+    "scalerank": 2
+  },
+  {
+    "name": "Richmond North",
+    "latitude": -33.581169,
+    "longitude": 150.719421,
+    "state": "",
+    "city": "Sydney",
+    "scalerank": 2
+  },
+  {
+    "name": "Katoomba",
+    "latitude": -33.713032,
+    "longitude": 150.311737,
+    "state": "",
+    "city": "Sydney",
+    "scalerank": 2
+  },
+  {
+    "name": "Byron Bay",
+    "latitude": -28.64201,
+    "longitude": 153.611938,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Coffs Harbour",
+    "latitude": -30.296261,
+    "longitude": 153.11351,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Pambula",
+    "latitude": -36.930099,
+    "longitude": 149.874496,
+    "state": "NSW",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Geelong",
+    "latitude": -38.153461,
+    "longitude": 144.358093,
+    "state": "",
+    "city": "Melbourne",
+    "scalerank": 2
+  },
+  {
+    "name": "Melton",
+    "latitude": -37.683392,
+    "longitude": 144.585434,
+    "state": "",
+    "city": "Melbourne",
+    "scalerank": 2
+  },
+  {
+    "name": "Cranbourne",
+    "latitude": -38.1,
+    "longitude": 145.283333,
+    "state": "Victoria",
+    "city": "Melbourne",
+    "scalerank": 2
+  }
+]

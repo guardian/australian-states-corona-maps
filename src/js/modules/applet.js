@@ -19,6 +19,8 @@ export class App {
 
 		this.places = places
 
+		console.log(this.places)
+
 		this.cases = data.locations.filter(d => d.State == state)
 
 		this.updated = this.cases [0].Date
@@ -26,6 +28,12 @@ export class App {
 		this.ratio = (self.stateData.maps[0].active) ? self.stateData.maps[0].zoom : self.stateData.maps[1].zoom
 
 		this.centre = (self.stateData.maps[0].active) ? self.stateData.maps[0].centre : self.stateData.maps[1].centre
+
+		this.filter = (self.stateData.maps[0].active) ? self.stateData.maps[0].label : self.stateData.maps[1].label
+
+		this.locality = (self.stateData.maps[0].active) ? "state" : "city" ;
+
+		console.log(this.filter, this.locality)
 
 		this.lgas(this.stateData.path)
 		
@@ -92,6 +100,12 @@ export class App {
 			self.ratio = (self.stateData.maps[0].active) ? self.stateData.maps[0].zoom : self.stateData.maps[1].zoom
 
 			self.centre = (self.stateData.maps[0].active) ? self.stateData.maps[0].centre : self.stateData.maps[1].centre
+
+			self.filter = (self.stateData.maps[0].active) ? self.stateData.maps[0].label : self.stateData.maps[1].label
+
+			self.locality = (self.stateData.maps[0].active) ? "state" : "city" ;
+
+			console.log(self.filter, self.locality)
 
 			self.init()
 
@@ -166,7 +180,7 @@ export class App {
 			
 		})
 
-		var filterPlaces = self.places.filter( (d) => d.admin === self.state);
+		var filterPlaces = self.places.filter( (d) => d[self.locality] === self.filter);
 
 		var path = d3.geoPath().projection(projection);
 
@@ -225,9 +239,9 @@ export class App {
 			
 		labels.enter()
 			.append("text")
-			.text((d) => d.city)
-			.attr("x", (d) => projection([d.lng, d.lat])[0])
-			.attr("y", (d) => projection([d.lng, d.lat])[1])
+			.text((d) => d.name)
+			.attr("x", (d) => projection([d.longitude, d.latitude])[0])
+			.attr("y", (d) => projection([d.longitude, d.latitude])[1])
 			.attr("class","label")
 	  
 	    // Big circle
