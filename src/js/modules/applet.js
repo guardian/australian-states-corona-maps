@@ -166,14 +166,7 @@ export class App {
 			
 		})
 
-		var filterPlaces = self.places.features.filter(function(d){ 
-			if (isMobile) {
-				return d.properties.scalerank < 2	
-			} else {
-				return d.properties.scalerank < 4		
-			}
-			
-		});
+		var filterPlaces = self.places.filter( (d) => d.admin === self.state);
 
 		var path = d3.geoPath().projection(projection);
 
@@ -232,9 +225,9 @@ export class App {
 			
 		labels.enter()
 			.append("text")
-			.text((d) => d.properties.name)
-			.attr("x", (d) => projection([d.properties.longitude, d.properties.latitude])[0])
-			.attr("y", (d) => projection([d.properties.longitude, d.properties.latitude])[1])
+			.text((d) => d.city)
+			.attr("x", (d) => projection([d.lng, d.lat])[0])
+			.attr("y", (d) => projection([d.lng, d.lat])[1])
 			.attr("class","label")
 	  
 	    // Big circle

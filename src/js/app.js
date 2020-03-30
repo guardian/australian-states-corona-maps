@@ -1,7 +1,7 @@
 import loadJson from '../components/load-json/'
 import getURLParams from "./modules/getURLParams"
 import settings from "./settings.json"
-import places from "./places.json"
+import places from "./au.json"
 import { App } from './modules/applet'
 
 const state = getURLParams("state") ? getURLParams("state") : "NSW"
