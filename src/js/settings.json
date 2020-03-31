@@ -4,6 +4,7 @@
 	"source" : "NSW Health",
 	"path" : "<%= path %>/assets/nsw-lga-2019.json",
 	"object" : "nsw-lga-2019",
+	"merge" : "LGA_NAME19",
 	"maps" : [{
 		"label" : "NSW",
 		"centre" : [147,-33],
@@ -21,6 +22,7 @@
 	"source" : "Victoria Health",
 	"path" : "<%= path %>/assets/vic-lga-2019.json",
 	"object" : "vic-lga-2019",
+	"merge" : "LGA_NAME19",
 	"maps" : [{
 		"label" : "Victoria",
 		"centre" : [145.5,-36.5],
@@ -36,17 +38,18 @@
 	"state" : "QLD",
 	"title" : "Queensland",
 	"source" : "Queensland Health",
-	"path" : "<%= path %>/assets/qld-lga-2019.json",
-	"object" : "qld-lga-2019",
+	"path" : "<%= path %>/assets/qld-health.json",
+	"object" : "qld_health",
+	"merge" : "HHS",
 	"maps" : [{
 		"label" : "Queensland",
-		"centre" : [145.5,-36.5],
-		"zoom" : 5.8,
+		"centre" : [146,-20.5],
+		"zoom" : 2.5,
 		"active" : true
 	},{
 		"label" : "Brisbane",
-		"centre" : [145,-37.8],
-		"zoom" : 40,
+		"centre" : [153,-26.4],
+		"zoom" : 10,
 		"active" : false
 	}]
 }]

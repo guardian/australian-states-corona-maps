@@ -4,7 +4,7 @@ import settings from "./settings.json"
 import places from "./places.json"
 import { App } from './modules/applet'
 
-const state = getURLParams("state") ? getURLParams("state") : "NSW"
+const state = getURLParams("state") ? getURLParams("state") : "QLD"
 
 var stateData = settings.find( item => item.state === state)
 

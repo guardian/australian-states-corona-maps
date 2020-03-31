@@ -19,11 +19,9 @@ export class App {
 
 		this.places = places
 
-		console.log(this.places)
-
 		this.cases = data.locations.filter(d => d.State == state)
 
-		this.updated = this.cases [0].Date
+		this.updated = this.cases[0].Date
 
 		this.ratio = (self.stateData.maps[0].active) ? self.stateData.maps[0].zoom : self.stateData.maps[1].zoom
 
@@ -33,7 +31,7 @@ export class App {
 
 		this.locality = (self.stateData.maps[0].active) ? "state" : "city" ;
 
-		console.log(this.filter, this.locality)
+		this.merge = self.stateData.merge
 
 		this.lgas(this.stateData.path)
 		
@@ -105,8 +103,6 @@ export class App {
 
 			self.locality = (self.stateData.maps[0].active) ? "state" : "city" ;
 
-			console.log(self.filter, self.locality)
-
 			self.init()
 
 		})
@@ -162,14 +158,14 @@ export class App {
 
 		self.lga.objects[self.stateData.object].geometries.forEach(function(d) {
 
-			if (mapData.has(d.properties.LGA_NAME19)) {
+			if (mapData.has(d.properties[self.merge])) {
 				var cases;
-				if (mapData.get(d.properties.LGA_NAME19)['Cases'] == "1-4") {
+				if (mapData.get(d.properties[self.merge])['Cases'] == "1-4") {
 					cases = 2
 				}
 
 				else {
-					cases = +mapData.get(d.properties.LGA_NAME19)['Cases']
+					cases = +mapData.get(d.properties[self.merge])['Cases']
 				}
 				d.properties.cases = cases
 			}
@@ -218,7 +214,7 @@ export class App {
 			.enter()
 			.append("circle")
 			.attr("class", "mapCircle")
-			.attr("title",d => d.LGA_NAME19)
+			.attr("title",d => d[self.merge])
 			.attr("cx",d => d.centroid[0])
 			.attr("cy",d => d.centroid[1])
 			.attr("r", (d) => (d.cases > 0) ? radius(d.cases) : 0 )   
@@ -236,7 +232,7 @@ export class App {
 
 
 		var labels = svg.selectAll("text").data(filterPlaces)
-			
+
 		labels.enter()
 			.append("text")
 			.text((d) => d.name)
@@ -294,6 +290,8 @@ export class App {
 	tipster(data) {
 
 		var self = this
+
+		data.title = data[self.merge]
 
 	    var html = mustache(tooltipHtml, data)
 
