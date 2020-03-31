@@ -1,6 +1,7 @@
 @import "mq";
 @import "fonts";
 @import "palette";
+@import "grid";
 // Uncomment for embeds
 //@import "embed";
 // Uncomment for full screen (including immersive article main media)
@@ -64,7 +65,7 @@
 	    -webkit-font-smoothing: antialiased;
 	    color: #333333;
 	    font-family: "GH Guardian Headline", Georgia, serif;
-	    margin-bottom: 2px;
+	    margin-bottom: 10px;
 	}
 
 	a {
@@ -84,6 +85,7 @@
 	    line-height: 20px;
 	    color: #333333;
 	    font-family: "Guardian Egyptian Web", Georgia, serif;
+	    margin-bottom:10px;
 	}
 
 	.footer {
@@ -101,7 +103,8 @@
 	}
 
 	.chartSans {
-		font-size:12px;
+		font-size:0.8rem;
+		line-height:1em;
 		color:#767676;
 		font-family:'Guardian Text Sans Web', 'Agate Sans', sans-serif;
 	}
