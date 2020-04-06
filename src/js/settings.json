@@ -2,6 +2,7 @@
 	"state" : "NSW",
 	"title" : "New South Wales",
 	"source" : "NSW Health",
+	"area" : "local government area",
 	"path" : "<%= path %>/assets/nsw-lga-2019.json",
 	"object" : "nsw-lga-2019",
 	"merge" : "LGA_NAME19",
@@ -19,6 +20,7 @@
 },{
 	"state" : "VIC",
 	"title" : "Victoria",
+	"area" : "local government area",
 	"source" : "Victoria Health",
 	"path" : "<%= path %>/assets/vic-lga-2019.json",
 	"object" : "vic-lga-2019",
@@ -38,6 +40,7 @@
 	"state" : "QLD",
 	"title" : "Queensland",
 	"source" : "Queensland Health",
+	"area" : "hospital and health area",
 	"path" : "<%= path %>/assets/qld-health.json",
 	"object" : "qld_health",
 	"merge" : "HHS",

@@ -57,6 +57,8 @@ export class App {
 
 			source : this.stateData.source,
 
+			area : this.stateData.area,
+
 			updated : this.updated,
 
 			label : (this.stateData.maps[0].active) ? `Zoom to ${this.stateData.maps[1].label}` : `Zoom to ${this.stateData.maps[0].label}`
