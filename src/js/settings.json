@@ -58,6 +58,24 @@
 		"zoom" : 10,
 		"active" : false
 	}]
+},{
+	"state" : "WA",
+	"title" : "Western Australia",
+	"source" : "WA Health",
+	"url" : "https://interactive.guim.co.uk/covidfeeds/wa.json",
+	"area" : "local government area",
+	"path" : "<%= path %>/assets/wa-lga.json",
+	"object" : "wa",
+	"merge" : "LGA_NAME16",
+	"maps" : [{
+		"label" : "WA",
+		"centre" : [122,-25],
+		"zoom" : 1.7,
+		"active" : true
+	},{
+		"label" : "Perth",
+		"centre" : [116, -32],
+		"zoom" : 20,
+		"active" : false
+	}]
 }]
-
-
