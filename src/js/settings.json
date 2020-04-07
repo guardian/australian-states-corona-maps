@@ -3,6 +3,7 @@
 	"title" : "New South Wales",
 	"source" : "NSW Health",
 	"url" : "https://interactive.guim.co.uk/covidfeeds/nsw.json",
+	"area" : "local government area",
 	"path" : "<%= path %>/assets/nsw-lga-2019.json",
 	"object" : "nsw-lga-2019",
 	"merge" : "LGA_NAME19",
@@ -20,6 +21,7 @@
 },{
 	"state" : "VIC",
 	"title" : "Victoria",
+	"area" : "local government area",
 	"source" : "Victoria Health",
 	"url" : "https://interactive.guim.co.uk/covidfeeds/victoria.json",
 	"path" : "<%= path %>/assets/vic-lga-2019.json",
@@ -41,6 +43,7 @@
 	"title" : "Queensland",
 	"source" : "Queensland Health",
 	"url" : "https://interactive.guim.co.uk/covidfeeds/queensland.json",
+	"area" : "hospital and health area",
 	"path" : "<%= path %>/assets/qld-health.json",
 	"object" : "qld_health",
 	"merge" : "HHS",
