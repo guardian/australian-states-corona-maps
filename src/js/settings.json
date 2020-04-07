@@ -70,7 +70,7 @@
 	"maps" : [{
 		"label" : "WA",
 		"centre" : [122,-25],
-		"zoom" : 1.7,
+		"zoom" : 2.8,
 		"active" : true
 	},{
 		"label" : "Perth",
