@@ -64,9 +64,9 @@
 	"source" : "WA Health",
 	"url" : "https://interactive.guim.co.uk/covidfeeds/wa.json",
 	"area" : "local government area",
-	"path" : "<%= path %>/assets/wa-lga.json",
-	"object" : "wa",
-	"merge" : "LGA_NAME16",
+	"path" : "<%= path %>/assets/wa-lga-2019.json",
+	"object" : "wa-lga-2019",
+	"merge" : "LGA_NAME19",
 	"maps" : [{
 		"label" : "WA",
 		"centre" : [122,-25],

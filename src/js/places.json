@@ -236,7 +236,7 @@
     "latitude": -31.955015,
     "longitude": 115.839999,
     "state": "WA",
-    "city": "",
+    "city": "Perth",
     "scalerank": 0
   },
   {
@@ -349,6 +349,46 @@
     "longitude": 145.283333,
     "state": "",
     "city": "Melbourne",
+    "scalerank": 2
+  },
+  {
+    "name": "Karratha",
+    "latitude": -20.734321,
+    "longitude": 116.845235,
+    "state": "WA",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Albany",
+    "latitude": -35.029494,
+    "longitude": 117.885523,
+    "state": "WA",
+    "city": "",
+    "scalerank": 2
+  },
+  {
+    "name": "Fremantle",
+    "latitude": -32.053939,
+    "longitude": 115.748641,
+    "state": "",
+    "city": "Perth",
+    "scalerank": 2
+  },
+  {
+    "name": "Northam",
+    "latitude": -31.644655,
+    "longitude": 116.667603,
+    "state": "",
+    "city": "Perth",
+    "scalerank": 2
+  },
+  {
+    "name": "Joondalup",
+    "latitude": -31.733492,
+    "longitude": 115.77115,
+    "state": "",
+    "city": "Perth",
     "scalerank": 2
   }
 ]
