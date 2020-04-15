@@ -13,6 +13,7 @@ export class App {
 
 		this.data = data
 
+		console.log(data)
 		this.state = state
 
 		this.stateData = stateData
@@ -163,6 +164,10 @@ export class App {
 			if (mapData.has(d.properties[self.merge])) {
 				var cases;
 				if (mapData.get(d.properties[self.merge])['Cases'] == "1-4") {
+					cases = 2
+				}
+
+				else if (mapData.get(d.properties[self.merge])['Cases'] == "< 5") {
 					cases = 2
 				}
 
