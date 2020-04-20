@@ -4,13 +4,11 @@ import settings from "./settings.json"
 import places from "./places.json"
 import { App } from './modules/app'
 
-const state = getURLParams("state") ? getURLParams("state") : "nsw"
+const state = getURLParams("state") ? getURLParams("state") : "WA"
 
 var stateData = settings.find( item => item.state === state)
-
+console.log(stateData)
 if ( state != null ) {
-
-	console.log(stateData.url)
 
 	loadJson(`${stateData.url}?t=${new Date().getTime()}`) 
 	      .then((data) => {
