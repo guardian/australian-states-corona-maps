@@ -43,7 +43,7 @@
 	"title" : "Queensland",
 	"source" : "Queensland Health",
 	"url" : "https://interactive.guim.co.uk/covidfeeds/queensland-test.json",
-	"area" : "hospital and health area",
+	"area" : "local government area",
 	"path" : "<%= path %>/assets/qld-lga.json",
 	"object" : "qld-lga",
 	"merge" : "LGA_NAME19",
