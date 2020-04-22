@@ -166,13 +166,15 @@ export class App {
 
 		var extent = [1,100]
 
-		var mapData = d3.map(self.cases, function(d) { return d.place; });
+		var mapData = d3.map(self.cases, function(d) { return d.place.toLowerCase(); });
 
 		self.lga.objects[self.stateData.object].geometries.forEach(function(d) {
 
 			//console.log(self.state, d.properties[self.merge].replace(/ *\([^)]*\) */g, ""))
 
-			var place = (self.state === 'NSW') ?  d.properties[self.merge].replace(/ *\([^)]*\) */g, "") : d.properties[self.merge] ;
+			var place = (self.state === 'NSW') ?  d.properties[self.merge].replace(/ *\([^)]*\) */g, "").toLowerCase() : d.properties[self.merge].toLowerCase() ;
+
+			console.log(place)
 
 			if (mapData.has(place)) {
 				var cases;
