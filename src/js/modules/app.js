@@ -174,8 +174,6 @@ export class App {
 
 			var place = (self.state === 'NSW') ?  d.properties[self.merge].replace(/ *\([^)]*\) */g, "").toLowerCase() : d.properties[self.merge].toLowerCase() ;
 
-			console.log(place)
-
 			if (mapData.has(place)) {
 				var cases;
 				if (mapData.get(place)['count'] == "1-4") {
