@@ -228,6 +228,15 @@ export class App {
 		        .attr("stroke", "#bcbcbc")
 		        .attr("d", path); 
 
+		var labels = svg.selectAll("text").data(filterPlaces)
+
+		labels.enter()
+			.append("text")
+			.text((d) => d.name)
+			.attr("x", (d) => projection([d.longitude, d.latitude])[0])
+			.attr("y", (d) => projection([d.longitude, d.latitude])[1])
+			.attr("class","label")
+
 		var mapCircles = features.selectAll(".mapCircle").data(centroids);	        
 
 		mapCircles					
@@ -250,15 +259,6 @@ export class App {
 			})
 			.on("mouseout", (d) => self.tooltip.transition().duration(500).style("opacity", 0))
 
-
-		var labels = svg.selectAll("text").data(filterPlaces)
-
-		labels.enter()
-			.append("text")
-			.text((d) => d.name)
-			.attr("x", (d) => projection([d.longitude, d.latitude])[0])
-			.attr("y", (d) => projection([d.longitude, d.latitude])[1])
-			.attr("class","label")
 	  
 	    // Big circle
 
