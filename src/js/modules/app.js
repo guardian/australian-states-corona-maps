@@ -164,7 +164,7 @@ export class App {
 
 		container.selectAll("svg").remove()
 
-		var extent = [1,100]
+		var extent = [1,10]
 
 		var mapData = d3.map(self.cases, function(d) { return d.place.toLowerCase(); });
 

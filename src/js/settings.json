@@ -2,7 +2,7 @@
 	"state" : "NSW",
 	"title" : "New South Wales",
 	"source" : "NSW Health",
-	"url" : "https://interactive.guim.co.uk/covidfeeds/nsw.json",
+	"url" : "https://interactive.guim.co.uk/covidfeeds/nsw-month.json",
 	"area" : "local government area",
 	"path" : "<%= path %>/assets/nsw-lga-2019.json",
 	"object" : "nsw-lga-2019",
@@ -11,19 +11,19 @@
 		"label" : "NSW",
 		"centre" : [147,-33],
 		"zoom" : 3.9,
-		"active" : true
+		"active" : false
 	},{
 		"label" : "Sydney",
 		"centre" : [151,-33.8],
 		"zoom" : 40,
-		"active" : false
+		"active" : true
 	}]
 },{
 	"state" : "VIC",
 	"title" : "Victoria",
 	"area" : "local government area",
 	"source" : "Victoria Health",
-	"url" : "https://interactive.guim.co.uk/covidfeeds/victoria.json",
+	"url" : "https://interactive.guim.co.uk/covidfeeds/victoria-month.json",
 	"path" : "<%= path %>/assets/vic-lga-2019.json",
 	"object" : "vic-lga-2019",
 	"merge" : "LGA_NAME19",
@@ -31,18 +31,18 @@
 		"label" : "Victoria",
 		"centre" : [145.5,-36.5],
 		"zoom" : 5.8,
-		"active" : true
+		"active" : false
 	},{
 		"label" : "Melbourne",
 		"centre" : [145,-37.8],
 		"zoom" : 40,
-		"active" : false
+		"active" : true
 	}]
 },{
 	"state" : "QLD",
 	"title" : "Queensland",
 	"source" : "Queensland Health",
-	"url" : "https://interactive.guim.co.uk/covidfeeds/queensland.json",
+	"url" : "https://interactive.guim.co.uk/covidfeeds/queensland-month.json",
 	"area" : "local government area",
 	"path" : "<%= path %>/assets/qld-lga.json",
 	"object" : "qld-lga",
@@ -51,18 +51,18 @@
 		"label" : "Queensland",
 		"centre" : [146,-20.5],
 		"zoom" : 2.5,
-		"active" : true
+		"active" : false
 	},{
 		"label" : "Brisbane",
 		"centre" : [153,-26.4],
 		"zoom" : 10,
-		"active" : false
+		"active" : true
 	}]
 },{
 	"state" : "WA",
 	"title" : "Western Australia",
 	"source" : "WA Health",
-	"url" : "https://interactive.guim.co.uk/covidfeeds/wa.json",
+	"url" : "https://interactive.guim.co.uk/covidfeeds/wa-month.json",
 	"area" : "local government area",
 	"path" : "<%= path %>/assets/wa-lga-2019.json",
 	"object" : "wa-lga-2019",
@@ -71,11 +71,11 @@
 		"label" : "WA",
 		"centre" : [122,-25],
 		"zoom" : 2.8,
-		"active" : true
+		"active" : false
 	},{
 		"label" : "Perth",
 		"centre" : [116, -32],
 		"zoom" : 20,
-		"active" : false
+		"active" : true
 	}]
 }]
